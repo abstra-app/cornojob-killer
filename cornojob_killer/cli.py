@@ -14,7 +14,7 @@ Want to know more? Contact us at help@abstra.io
 """
 def main():
     print("Welcome to cornojob-killer - the only weapon you'll ever need to destroy annoying, repetitive tasks.")
-    input("Ready to kill your corno jobs?")
+    input("Ready to kill your corno jobs?\nPress enter to continue.")
     print("Abstra will start in a temporary directory. Changes will not be saved.")
     print("\nFor serious use cases, use the `abstra` CLI")
     print("Read the docs at docs.abstra.io")
