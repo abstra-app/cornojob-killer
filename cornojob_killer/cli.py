@@ -1,5 +1,5 @@
 from abstra.cli import CLI
-import tempfile
+import tempfile, time
 
 
 """
@@ -14,11 +14,11 @@ Want to know more? Contact us at help@abstra.io
 """
 def main():
     print("Welcome to cornojob-killer - the only weapon you'll ever need to destroy annoying, repetitive tasks.")
-    print("For serious use cases, use the `abstra` CLI")
     input("Ready to kill your corno jobs?")
     print("Abstra will start in a temporary directory. Changes will not be saved.")
-    print("For serious use cases, use the `abstra` CLI")
+    print("\nFor serious use cases, use the `abstra` CLI")
     print("Read the docs at docs.abstra.io")
+    time.sleep(2)
     temp_dir = tempfile.mkdtemp()
     cli = CLI()
     cli.serve(temp_dir)
