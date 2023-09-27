@@ -13,7 +13,6 @@ We're not kidding about that.
 Want to know more? Contact us at help@abstra.io
 """
 def main():
-    print("So you're a corno? Your secret is safe with us. ¯\\_(ツ)_/¯")
     print("Welcome to cornojob-killer - the only weapon you'll ever need to destroy annoying, repetitive tasks.")
     print("For serious use cases, use the `abstra` CLI")
     input("Ready to kill your corno jobs?")
