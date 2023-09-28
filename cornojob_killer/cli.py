@@ -1,6 +1,17 @@
 from abstra.cli import CLI
-import tempfile, time
+import tempfile, time, requests, uuid, hashlib
 
+def count():
+    """
+    Counting function to measure the number of times this lib was used.
+    """
+
+    sha256_hash = hashlib.sha256()
+    sha256_hash.update(str(uuid.getnode()).encode("utf-8"))
+    hashed_string = sha256_hash.hexdigest()
+    requests.get("https://cornojob-killer.abstra.app/_hooks/count", headers={
+        "counter": hashed_string # We don't want to know who you are, we just want to know how many people are using this. :)
+    })
 
 """
 If you're reading this, you're really paranoid about safety, right?
