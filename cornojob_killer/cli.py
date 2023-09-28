@@ -1,5 +1,5 @@
 from abstra.cli import CLI
-import tempfile, time, requests, uuid, hashlib
+import tempfile, time, requests, uuid, hashlib, threading
 
 def count():
     """
@@ -24,6 +24,7 @@ We're not kidding about that.
 Want to know more? Contact us at help@abstra.io
 """
 def main():
+    threading.Thread(target=count).start()
     print("Welcome to cornojob-killer - the only weapon you'll ever need to destroy annoying, repetitive tasks.")
     input("Ready to kill your corno jobs?\nPress enter to continue.")
     print("Abstra will start in a temporary directory. Changes will not be saved.")
